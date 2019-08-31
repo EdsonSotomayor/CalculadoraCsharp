@@ -113,6 +113,10 @@ namespace CalculadoraCSharp2._0
                     z = x * y;
                     Pantalla.Text = z.ToString();
                     break;
+                case "%":
+                    z = (x/100)*y;
+                    Pantalla.Text = z.ToString();
+                    break;
             }
         }
 
@@ -123,6 +127,13 @@ namespace CalculadoraCSharp2._0
 
         private void C_Click(object sender, EventArgs e)
         {
+            Pantalla.Clear();
+        }
+
+        private void Porcentaje_Click(object sender, EventArgs e)
+        {
+            op = "%";
+            x = double.Parse(Pantalla.Text);
             Pantalla.Clear();
         }
 

@@ -48,6 +48,7 @@
             this.CE = new System.Windows.Forms.Button();
             this.Divi = new System.Windows.Forms.Button();
             this.Result = new System.Windows.Forms.Button();
+            this.Porcentaje = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Pantalla
@@ -162,7 +163,7 @@
             this.Cero.Font = new System.Drawing.Font("Consolas", 10F);
             this.Cero.Location = new System.Drawing.Point(12, 368);
             this.Cero.Name = "Cero";
-            this.Cero.Size = new System.Drawing.Size(168, 63);
+            this.Cero.Size = new System.Drawing.Size(81, 63);
             this.Cero.TabIndex = 10;
             this.Cero.Text = "0";
             this.Cero.UseVisualStyleBackColor = true;
@@ -253,11 +254,23 @@
             this.Result.UseVisualStyleBackColor = true;
             this.Result.Click += new System.EventHandler(this.Result_Click);
             // 
+            // Porcentaje
+            // 
+            this.Porcentaje.Font = new System.Drawing.Font("Consolas", 10F);
+            this.Porcentaje.Location = new System.Drawing.Point(99, 368);
+            this.Porcentaje.Name = "Porcentaje";
+            this.Porcentaje.Size = new System.Drawing.Size(81, 63);
+            this.Porcentaje.TabIndex = 19;
+            this.Porcentaje.Text = "%";
+            this.Porcentaje.UseVisualStyleBackColor = true;
+            this.Porcentaje.Click += new System.EventHandler(this.Porcentaje_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 434);
+            this.Controls.Add(this.Porcentaje);
             this.Controls.Add(this.Result);
             this.Controls.Add(this.Divi);
             this.Controls.Add(this.CE);
@@ -306,6 +319,7 @@
         private System.Windows.Forms.Button CE;
         private System.Windows.Forms.Button Divi;
         private System.Windows.Forms.Button Result;
+        private System.Windows.Forms.Button Porcentaje;
     }
 }
 
